@@ -4,8 +4,13 @@ let impar=[];
 
 for (let i=0;i<numeros.length;i++){
     console.log(`Posición ${i}:${numeros[i]}`)
-    if(numeros%2 === 0){
+    if(numeros[i] % 2 === 0){
         par.push(numeros[i]);
+    } else if(numeros[i] % 2 !== 0){
+        impar.push(numeros[i]);
     }
-    impar.push(numeros[i]);
 }
+console.log(par);
+document.writeln(par);
+console.log(impar);
+document.write(impar);
